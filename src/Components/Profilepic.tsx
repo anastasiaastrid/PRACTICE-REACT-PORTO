@@ -1,5 +1,3 @@
-import React from "react";
-
 function Profilepic() {
   return (
     <div className="fixed">

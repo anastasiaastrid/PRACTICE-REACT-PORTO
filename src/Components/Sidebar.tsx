@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMailOutline, IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 function Sidebar() {

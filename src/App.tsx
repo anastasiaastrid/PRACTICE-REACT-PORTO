@@ -6,8 +6,6 @@ import Profilepic from "./Components/Profilepic";
 import Introduction from "./Components/Introduction";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />
