@@ -2,16 +2,24 @@ import { IoMailOutline, IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub } from "rea
 
 function Sidebar() {
   return (
-    <div className="--OUTER-SIDEBAR w-[90px] bg-green-100 border-r-[1px] h-screen fixed flex flex-col justify-around items-center">
+    <div
+      className="w-[90px] border-r-[1px] dark:bg-slate-800
+    h-screen fixed flex flex-col justify-around items-center mt-[90px]"
+    >
       <h2 className="-rotate-90 tracking-widest">HOMEPAGE</h2>
       <div className="flex flex-col gap-2 mb-10 text-[20px]">
         <IoLogoGithub
           onClick={() => {
-            window.open("https://github.com", "_blank");
+            window.open("https://github.com/anastasiaastrid", "_blank");
           }}
           className="cursor-pointer hover:scale-110 transition-all ease-in-out"
         />
-        <IoLogoLinkedin className="cursor-pointer hover:scale-110 transition-all ease-in-out" />
+        <IoLogoLinkedin
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/anastasia-astrid-84b96aa7/", "_blank");
+          }}
+          className="cursor-pointer hover:scale-110 transition-all ease-in-out"
+        />
         <IoMailOutline
           onClick={() => {
             window.open("https://mail.google.com/mail/u/hasan.astrid@email.com/#inbox?compose=new", "_blank");
