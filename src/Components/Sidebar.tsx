@@ -28,7 +28,7 @@ function Sidebar() {
         />
         <IoLogoWhatsapp
           onClick={() => {
-            window.open("https://wa.me/6281283838925", "_blank");
+            window.open("", "_blank");
           }}
           className="cursor-pointer hover:scale-110 transition-all ease-in-out"
         />
