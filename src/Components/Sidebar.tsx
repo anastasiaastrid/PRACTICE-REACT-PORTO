@@ -16,7 +16,7 @@ function Sidebar() {
         />
         <IoLogoLinkedin
           onClick={() => {
-            window.open("https://www.linkedin.com/in/anastasia-astrid-84b96aa7/", "_blank");
+            window.open("", "_blank");
           }}
           className="cursor-pointer hover:scale-110 transition-all ease-in-out"
         />

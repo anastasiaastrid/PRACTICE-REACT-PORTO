@@ -9,7 +9,7 @@ function Header() {
   return (
     <div
       className=" --OUTER-- fixed flex items-center w-screen
-    justify-between border-b-[1px] bg-white"
+   justify-between border-b-[1px] bg-white"
     >
       <div className="--OUTER LOGO ASTRID-- w-[90px] h-[90px] bg-black">
         <img src="/ASTRID H LOGO-01.png" className="p-1 w-full h-full" alt="Logo" />
