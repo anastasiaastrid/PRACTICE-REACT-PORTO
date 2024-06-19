@@ -1,23 +1,26 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
-import Sidebar from "./Components/Sidebar";
 import Introduction from "./Components/Introduction";
-import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Skill from "./Components/Skill";
 
 function App() {
   return (
-    <>
+    <Router>
       <div className="w-screen">
         <Header />
-        <Sidebar />
-        <div className="ml-[90pxA] grid grid-cols-1">
-          <div>
-            <Introduction />
-            <About />
-          </div>
+        <div>
+          <Routes>
+            <Route path="/" element={<Introduction />} />
+            <Route path="/skills" element={<Skill />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </div>
       </div>
-    </>
+    </Router>
   );
 }
 

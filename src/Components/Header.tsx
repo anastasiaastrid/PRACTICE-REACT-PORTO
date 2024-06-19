@@ -1,42 +1,18 @@
-function Header() {
-  const menu = [
-    { id: 1, name: "HOME" },
-    { id: 2, name: "SKILLS" },
-    { id: 3, name: "PROJECTS" },
-    { id: 4, name: "CONTACT" },
-  ];
+import { Link } from "react-router-dom";
 
+function Header() {
   return (
-    <div
-      className=" --OUTER-- fixed flex items-center w-screen
-   justify-between border-b-[1px] bg-white"
-    >
-      <div className="--OUTER LOGO ASTRID-- w-[90px] h-[90px] bg-black">
-        <img src="/ASTRID H LOGO-01.png" className="p-1 w-full h-full" alt="Logo" />
+    <div className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 bg-white h-24 z-50 md:px-8 lg:px-16 border-b-[1px]">
+      <div className="flex items-center">
+        <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
+          <img src="/ASTRID-H-LOGO-01-BLACK.jpg" className="p-1 w-full h-full" alt="Logo" />
+        </div>
       </div>
-      <div className=" --MENU LIST-- hidden md:flex gap-14">
-        {menu.map((item) => (
-          <div key={item.id} className="cursor-pointer hover:underline font-medium">
-            <h2>{item.name}</h2>
-          </div>
-        ))}
-      </div>
-      <div className="w-[90px] h-[90px] flex justify-center items-center bg-black">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-[49px] h-49px]"
-          style={{ color: "#6DD9B6" }}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-          />
-        </svg>
+      <div className="flex items-center ml-auto space-x-8">
+        <Link to="/" className="text-black hover:text-gray-600 hover:font-bold transition-colors duration-300 font-medium">HOME</Link>
+        <Link to="/skills" className="text-black  hover:text-gray-600 hover:font-bold transition-colors duration-300 font-medium">SKILLS</Link>
+        <Link to="/projects" className="text-black  hover:text-gray-600 hover:font-bold transition-colors duration-300 font-medium">PROJECTS</Link>
+        <Link to="/contact" className="text-black  hover:text-gray-600 hover:font-bold transition-colors duration-300 font-medium">CONTACT</Link>
       </div>
     </div>
   );
