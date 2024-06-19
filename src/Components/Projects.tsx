@@ -1,10 +1,12 @@
 function Projects() {
   return (
-    <div className="px-4 md:px-24 text-center">
-      <h2 className="text-black text-3xl md:text-5xl font-bold pt-10">My Latest Projects!</h2>
-      <div className="mt-8">
-        <p className="text-gray-800">Project 1: Front End</p>
-        <p className="text-gray-800">Project 2: Back End</p>
+    <div className="px-8 md:px-44 text-center flex flex-col items-center pt-24">
+      <h2 className="text-black text-[40px] font-bold pt-10">My Latest Projects</h2>
+      <div className="my-5 w-full flex flex-col items-center">
+        <p>React + Vite :</p>
+        <p>Next JS : </p>
+        <p>Front End Web Design : </p>
+        <p>Back End : </p>
       </div>
     </div>
   );
